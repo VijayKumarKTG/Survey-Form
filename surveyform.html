@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+	<link rel="stylesheet" href="styles.css" type="text/css" />
+	<title>Survey Form</title>
+</head>
+
+<body>
+	<div id="wrapper">
+		<h1 id="title">Survey Form</h1>
+		<p id="description">Let us know your visions and opinions on Artificial Intelligence</p>
+		<form action="#" method="post" id="survey-form">
+			<label for="name" id="name-label">*Name:</label>
+			<input type="text" id="name" name="userName" required="required" placeholder="Enter your name"/><br />
+			
+			<label for="email" id="email-label">*Email:</label>
+			<input type="email" id="email" name="userEmail" required="required" placeholder="Enter your email"/><br />
+			
+			<label for="number" id="number-label">*Age:</label>
+			<input type="number" id="number" name="userAge" min="16" max="60" required="required" placeholder="Enter your age" /><br />
+			
+			<label for="dropdown">Which option best describe yor current role:</label><br />
+			<select size="1" id="dropdown" name="currentRole">
+				<option value="student">Student</option>
+				<option value="full time job">Full Time Job</option>
+				<option value="part time job">PartTimeJob</option>
+				<option value="other">Other</option>
+			</select><br />
+			
+			<fieldset>
+				<legend>*Would you consider yourself to be someone who enjoys technology and all of its uses?</legend>
+				<input type="radio" name="technology" id="yes1" />
+				<label for="yes1">Yes</label><br />
+				<input type="radio" name="technology" id="no1" />
+				<label for="no1">No</label><br />
+			</fieldset><br />
+			
+			<fieldset>
+				<legend>*Aritficial intelligence revolves around anything that is not organic that can display intelligenc similar to something that is living and breathing. Are you familiar with this concept?</legend>
+				<input type="radio" name="AI" id="yes2" />
+				<label for="yes2">Yes</label><br />
+				<input type="radio" name="AI" id="no2" />
+				<label for="no2">No</label><br />
+			</fieldset><br />
+			
+			<fieldset>
+				<legend>*Do you think artificial intelligence will be dangerous to our society?</legend>
+				<input type="radio" name="AIdangerous" id="yes3" />
+				<label for="yes3">Yes</label><br />
+				<input type="radio" name="AIdangerous" id="no3" />
+				<label for="no3">No</label><br />
+			</fieldset><br />
+			
+			<fieldset>
+				<legend>*Do you think A.I.s will take away our jobs and decrease the job market?</legend>
+				<input type="radio" name="ourJob" id="yes4" />
+				<label for="yes4">Yes</label><br />
+				<input type="radio" name="ourJob" id="no4" />
+				<label for="no4">No</label><br />
+			</fieldset><br />
+			
+			<fieldset>
+				<legend>*How would you feel about having an A.I implemented into your home or devices?</legend>
+				<input type="radio" name="AIimplementation" id="excited" />
+				<label for="excited">Excited</label><br />
+				<input type="radio" name="AIimplementation" id="scared" />
+				<label for="scared">Scared</label><br />
+				<input type="radio" name="AIimplementation" id="both" />
+				<label for="both">A bit of both</label><br />
+				<input type="radio" name="AIimplementation" id="other2" />
+				<label for="other2">Other</label><br />
+			</fieldset><br />
+			
+			<fieldset>
+				<legend>*The issues your organisation is facing / will face in adopting A.I are:</legend>
+				<input type="checkbox" name="adoptingAI" id="data-quality" value="data quality" />
+				<label for="data-quality">Data Quality</label><br />
+				<input type="checkbox" name="adoptingAI" id="itProcess" value="it processes and systems" />
+				<label for="itProcess">IT processes and systems</label><br />
+				<input type="checkbox" name="adoptingAI" id="compliance" value="compliance and governance" />
+				<label for="compliance">Compliance and governance</label><br />
+				<input type="checkbox" name="adoptingAI" id="executive" value="executive understanding of AI" />
+				<label for="executive">Executive understanding of AI</label><br />
+				<input type="checkbox" name="adoptingAI" id="ethical" value="ethical considerations" />
+				<label for="ethical">Ethical considerations</label><br />
+				<input type="checkbox" name="adoptingAI" id="dataAvail" value="data availability" />
+				<label for="dataAvail">Data availability</label><br />
+			</fieldset><br />
+			
+			<label for="comment">Any Comments or Suggestons?</label><br />
+			<textarea cols="20" rows="6" placeholder="Enter your comment here..." id="comment"></textarea><br />
+			
+			<label for="submit"><input type="submit" id="submit"/></label><br />
+		</form>
+	</div>
+</body>
+</html>
